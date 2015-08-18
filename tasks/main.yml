@@ -100,6 +100,7 @@
 # TODO [kraM] Make become configurable when v2 has arrived - Thu 21 May 2015 10:23:35 AM CEST
 - name: Install local persistent data path
   tags: util
+  become: False
   local_action: file
   args:
     state: directory
